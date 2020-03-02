@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<div class="form-container">
+    <h2>Questions</h2>
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <% if(locals.success) { %>
+        <div class="alert alert-success"><%= success %></div>
+    <% } %>
+
+    <a href="/addQuestion">Add Question</button>
+    <table id="perguntas">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Pergunta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<%- include('partials/footer') %>

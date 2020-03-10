@@ -1,0 +1,27 @@
+<h1>My Account</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Pergunta</th>
+            <th></th>
+            <th></th>
+        </tr>        
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+<div class="form-container">
+    <form method="post">
+        <div class="form-group">
+            <label for="descQuestion">Question</label>
+            <input type="text" id="descQuestion" class="form-control" ng-model="vm.question.description" required />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="vm.saveQuestion()">Save</button>
+            <button class="btn btn-danger" ng-click="vm.deleteQuestion()">Delete</button>
+        </div>
+    </form>
+</div>

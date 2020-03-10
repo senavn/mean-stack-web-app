@@ -13,6 +13,7 @@
         <ul class="nav nav-tabs">
             <li ng-class="{active: activeTab === 'home'}"><a ui-sref="home">Home</a></li>
             <li ng-class="{active: activeTab === 'account'}"><a ui-sref="account">Account</a></li>
+            <li ng-class="{active: activeTab === 'questions'}"><a ui-sref="questions">Questions</a></li>
             <li><a href="/login" target="_self">Logout</a></li>
         </ul>
         <div class="flash-message" ng-if="flash">
@@ -26,16 +27,21 @@
     <!-- footer -->
     <footer></footer>
 
-    <!-- external scripts -->
-    <script src="/jquery-2.1.4/jquery.min.js"></script>
+    <script src="/jquery-2.1.4/jquery-2.1.4.js"></script>
     <script src="/angular-1.4.7/angular.min.js"></script>
     <script src="/angular-ui-router-0.2.15/angular-ui-router.min.js"></script>
+    <!-- external scripts -->
+    <!--
+    
+    -->
 
     <!-- application scripts -->
     <script src="app.js"></script>
     <script src="app-services/user.service.js"></script>
+    <script src="app-services/question.service.js"></script>
     <script src="app-services/flash.service.js"></script>
     <script src="home/index.controller.js"></script>
     <script src="account/index.controller.js"></script>
+    <script src="question/index.controller.js"></script>
 </body>
 </html>
